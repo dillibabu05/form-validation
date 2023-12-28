@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form</title>
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css">
+   <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 first">
+        <form>
+            <h1 class="register">Register</h1>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="dob">Date of Birth</label>
+              <input type="date" class="form-control" id="dob" >
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="alternativePhone">Alternative Phone</label>
+            <input type="tel" class="form-control" id="alternativePhone">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="favoriteCourse">Select Course</label>
+              <select class="form-control" id="selectCourse">
+                <option value="">select</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="skillRange">Skill Level</label>
+              <input type="range" class="form-control-range" id="skillRange"  min="1" max="10" value="0">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label>Gender</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male" >
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female" >
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="others" value="others" >
+                <label class="form-check-label" for="others">Others</label>
+              </div>
+              <h6 id="demo"></h6>
+            </div>
+            
+
+            <div class="form-group col-md-6">
+              <label>Favorite Courses:</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="html" name="favCourses[]" value="html">
+                <label class="form-check-label" for="html">HTML</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="css" name="favCourses[]" value="css">
+                <label class="form-check-label" for="css">CSS</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="js" name="favCourses[]" value="js">
+                <label class="form-check-label" for="js">JavaScript</label>
+              </div>
+              <span id="demo1"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message"  rows="3"></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-outline-dark" type="submit" id="contact_send">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-4 second">
+        <img src="img/7140416_3487925.svg" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

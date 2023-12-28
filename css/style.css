@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+      .form-group {
+        display: block;
+        margin-bottom: 15px;
+      }
+      .form-check-inline, .form-radio-inline {
+        display: block;
+      }
+      .second{
+        display: none;
+      }
+    }
+
+    .register{
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    .first{
+        background-color: #00DFC2;
+        padding: 20px;
+    }
+    .second{
+        margin-top: 50px;
+    }
+
